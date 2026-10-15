@@ -1,0 +1,38 @@
+MI COBRADOR — VERSIÓN 1.2
+
+Preferencias configuradas
+- Instalación como PWA desde Safari en iPhone, sin costo.
+- Sin PIN ni bloqueo adicional dentro de la app.
+- Moneda: pesos argentinos (ARS).
+- Datos guardados localmente; sin sincronización automática.
+- Copias de seguridad y restauración manuales.
+
+Funciones
+- Ficha de cliente con nombre, teléfono y notas.
+- Registro de deudas por mercadería y pagos parciales.
+- Saldo calculado automáticamente e historial de movimientos.
+- Buscar clientes por nombre o teléfono.
+- Ordenar por nombre, mayor deuda o antigüedad de la deuda pendiente.
+- Resumen de cobros registrados durante el día.
+- Descripción detallada por deuda o pago (por ejemplo, 10 cajas de detergente).
+- Fecha y hora del registro de cada movimiento.
+- Enviar estado de cuenta a WhatsApp para elegir el contacto.
+- Exportar saldos a CSV.
+- Copia de seguridad manual en JSON y restauración desde archivo.
+- Interfaz adaptada a iPhone y caché para abrir la app sin conexión después de la primera carga.
+
+COMPATIBILIDAD CON LOS DATOS EXISTENTES
+Esta actualización conserva la clave de almacenamiento local `miCobradorDataV1` y el formato de los movimientos. Si ya cargaste datos en una versión anterior alojada bajo la misma dirección web, no cambies la dirección/origen de la app y hacé una copia manual antes de actualizar. La versión descargada en este ZIP no contiene tus registros personales: los datos viven en el almacenamiento del navegador de tu dispositivo.
+
+PRIVACIDAD Y DATOS
+Los registros se guardan localmente en el almacenamiento del navegador de este dispositivo. La app no sincroniza ni envía la lista de clientes a un servidor. No hay PIN. El alojamiento HTTPS solo sirve los archivos de la aplicación; no almacena las cuentas. Si borrás los datos del sitio/navegador, restaurás el teléfono o perdés el dispositivo, podés perder los registros locales. Hacé copias manuales y comprobá que el archivo JSON se haya guardado en Archivos.
+
+INSTALAR EN IPHONE
+Para instalarla como app desde Safari y usarla sin conexión después de la primera carga, estos archivos deben estar publicados en una dirección HTTPS. Abrir `index.html` desde Archivos no instala una PWA completa. Podés usar un servicio de alojamiento estático gratuito como GitHub Pages; requiere configurar una cuenta y un repositorio. Cuando esté publicada, abrí la URL en Safari, tocá Compartir y elegí “Añadir a pantalla de inicio”.
+
+COPIAS MANUALES
+1. En Mi Cobrador, tocá “Copia de seguridad” o “Guardar copia de seguridad”.
+2. Guardá el archivo `.json` en Archivos, en “En mi iPhone” o en iCloud Drive según dónde quieras conservarlo. La app no se sincroniza; si elegís iCloud Drive, el archivo de respaldo sí estará en iCloud.
+3. Para recuperar datos, tocá “Restaurar copia” y seleccioná el `.json`. La restauración reemplaza los datos actuales; hacé otra copia antes si necesitás conservarlos.
+
+Antes de cargar información real, probá el flujo con un cliente ficticio y verificá que la copia se pueda restaurar correctamente.
